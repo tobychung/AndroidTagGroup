@@ -892,10 +892,10 @@ public class TagGroup extends ViewGroup {
 
         @Override
         protected void onDraw(Canvas canvas) {
-            canvas.drawArc(mLeftCornerRectF, -180, 90, true, mBackgroundPaint);
-            canvas.drawArc(mLeftCornerRectF, -270, 90, true, mBackgroundPaint);
-            canvas.drawArc(mRightCornerRectF, -90, 90, true, mBackgroundPaint);
-            canvas.drawArc(mRightCornerRectF, 0, 90, true, mBackgroundPaint);
+            canvas.drawRect(mLeftCornerRectF, -180, 90, true, mBackgroundPaint);
+            canvas.drawRect(mLeftCornerRectF, -270, 90, true, mBackgroundPaint);
+            canvas.drawRect(mRightCornerRectF, -90, 90, true, mBackgroundPaint);
+            canvas.drawRect(mRightCornerRectF, 0, 90, true, mBackgroundPaint);
             canvas.drawRect(mHorizontalBlankFillRectF, mBackgroundPaint);
             canvas.drawRect(mVerticalBlankFillRectF, mBackgroundPaint);
 

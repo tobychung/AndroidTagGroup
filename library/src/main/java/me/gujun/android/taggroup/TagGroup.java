@@ -926,10 +926,10 @@ public class TagGroup extends ViewGroup {
             mRightCornerRectF.set(right - d, top, right, top + d);
 
             mBorderPath.reset();
-            mBorderPath.addArc(mLeftCornerRectF, -180, 90);
-            mBorderPath.addArc(mLeftCornerRectF, -270, 90);
-            mBorderPath.addArc(mRightCornerRectF, -90, 90);
-            mBorderPath.addArc(mRightCornerRectF, 0, 90);
+            mBorderPath.addRect(mLeftCornerRectF, -180, 90);
+            mBorderPath.addRect(mLeftCornerRectF, -270, 90);
+            mBorderPath.addRect(mRightCornerRectF, -90, 90);
+            mBorderPath.addRect(mRightCornerRectF, 0, 90);
 
             int l = (int) (d / 2.0f);
             mBorderPath.moveTo(left + l, top);
